@@ -31,10 +31,11 @@ Calling tft.invertDisplay(true); corrected the BGR/RGB color channel issue, but 
 
 🔌 Hardware Pinout
 
-**Component**	                        **Pin Connection**
-HC-SR04 Trigger	                  D5
-HC-SR04 Echo	                    D6
-TFT CS / RST	                    D4 / D12
-TFT A0 (DC) / SDA / SCL	          D3 / D11 / D13
-Relay	                            D8
-Joystick X / Y / Btn	            A0 / A1 / D2
+| Component | Pin Connection |
+| :--- | :--- |
+| **HC-SR04 Trigger** | D5 |
+| **HC-SR04 Echo** | D6 |
+| **TFT CS / RST** | D4 / D12 |
+| **TFT A0 (DC) / SDA / SCL** | D3 / D11 / D13 |
+| **Relay** | D8 |
+| **Joystick X / Y / Btn**| A0 / A1 / D2 |
