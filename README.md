@@ -22,3 +22,19 @@ TFT displays driven by standard Arduino boards suffer from severe flickering if 
   ```cpp
   tft.fillRect(0, 70, barWidth, 10, barColor);
   tft.fillRect(barWidth, 70, 128 - barWidth, 10, ST77XX_WHITE);
+
+
+🛠️ Dealing with Cloned Hardware
+
+The project utilizes a low-cost clone of the ST7735 display. When attempting to use standard commands, the display exhibited inverted colors and static artifacts.
+Calling tft.invertDisplay(true); corrected the BGR/RGB color channel issue, but introduced a persistent static effect. Instead of abandoning the hardware, I adapted the UI design to remain readable and functional despite the static interference, demonstrating resilience and problem-solving with imperfect hardware.
+
+🔌 Hardware Pinout
+
+**Component**	                        **Pin Connection**
+HC-SR04 Trigger	                  D5
+HC-SR04 Echo	                    D6
+TFT CS / RST	                    D4 / D12
+TFT A0 (DC) / SDA / SCL	          D3 / D11 / D13
+Relay	                            D8
+Joystick X / Y / Btn	            A0 / A1 / D2
