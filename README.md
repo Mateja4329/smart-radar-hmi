@@ -5,7 +5,7 @@ A functional prototype of an embedded Human-Machine Interface (HMI) using an Ard
 
 ![Radar Demo](SR_V1.gif)
 
-## 🚀 Key Engineering Features
+## Key Engineering Features
 
 ### 1. Ultra-Fast Sensor Polling (Non-Blocking)
 Standard ultrasonic sensor code often completely blocks the microcontroller. To keep the UI responsive, I implemented a strict hardware timeout:
@@ -29,7 +29,7 @@ TFT displays driven by standard Arduino boards suffer from severe flickering if 
 The project utilizes a low-cost clone of the ST7735 display. When attempting to use standard commands, the display exhibited inverted colors and static artifacts.
 Calling tft.invertDisplay(true); corrected the BGR/RGB color channel issue, but introduced a persistent static effect. Instead of abandoning the hardware, I adapted the UI design to remain readable and functional despite the static interference, demonstrating resilience and problem-solving with imperfect hardware.
 
-🔌 Hardware Pinout
+ Hardware Pinout
 
 | Component | Pin Connection |
 | :--- | :--- |
